@@ -1,0 +1,31 @@
+/* Target the tab using its role and accessibility label. */
+/* This selector is specific and relies on attributes X.com uses. */
+/* It might break if X changes its code significantly. */
+
+/* --- Hide the 'For You' Tab --- */
+
+
+/* Target the link tab inside the FIRST direct child div of the ScrollSnap-List */
+
+
+  
+  /* Note: Selectors might need updating if X.com changes its structure. */
+  /* Note: Selectors might need updating if X.com changes its structure. */
+  /* --- Optional: Hide the 'Verified' Tab --- */
+  /* Uncomment the block below if you also want to hide the 'Verified' tab */
+  /*
+  [role="tab"][aria-label="Timeline: Verified"] {
+    display: none !important;
+  }
+  */
+  
+  /* --- Optional: Hide the 'Lists' Tab --- */
+  /* Uncomment the block below if you also want to hide the 'Lists' tab */
+  /*
+  [role="tab"][aria-label*="Lists"] {
+    display: none !important;
+  }
+  */
+  
+  /* Note: Selectors might need updating if X.com changes its structure. */
+  /* Use browser developer tools (F12 -> Inspector) to find new selectors if needed. */

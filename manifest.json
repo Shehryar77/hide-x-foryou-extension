@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Hide X 'For You' Tab",
+    "version": "1.0",
+    "description": "Hides the 'For you' tab on X.com (Twitter) interface.",
+    "icons": {
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*", "*://x.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "host_permissions": [
+      "*://twitter.com/*",
+      "*://x.com/*"
+    ]
+  }
